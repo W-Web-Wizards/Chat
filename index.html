@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Chat | Web Wizards</title>
+	  <link rel="stylesheet" href="connect.css">
+    <noscript>UNSUPPORTED: Your browser does not support scripting.</noscript>
+  </head>
+  <body>
+	  <center class="center">
+		  <h1>Enter Name: </h1>
+		  <p>
+        <input type="text"id="name">
+		  </p>
+      <p>
+        <h2>Enter Server Address: </h2>
+      </p>
+      <input type="text" id="address">
+      <p>
+        <button id="join">Join Server</button>
+      </p>
+      <p>
+        <button id="official">Connect to Public Server (Moderated) </button>
+      </p>
+      <div id="errtxt"></div>
+    </center>
+    <script src="https://cdn.socket.io/socket.io-2.3.1.slim.js"></script>
+    <script src="connect.js"></script>
+  </body>
+</html>
