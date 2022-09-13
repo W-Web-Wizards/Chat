@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+  	<title>Chat | Web Wizards</title>
+	  <link href="style.css" rel="stylesheet">
+  	<noscript>UNSUPPORTED: Your browser does not support scripting.</noscript>
+  </head>
+  <body>
+    <button id="exitbutton">Exit</button>
+    <ul class="msgs" id="msgs">
+      <div style="display: none;>
+        <span class="name">John Doe</span><br>
+        <li class="other">Hi!</li>
+      </div>
+      <div class="youcontainer" style="display: none;">
+        <span class="name">You</span><br>
+        <li class="you">Hi!</li>
+      </div>
+    </ul>
+    <div class="bar">
+      <input type="text" id="msgbar">
+      <button id="sendbutton">Send</button>
+    </div>
+    <script src="https://cdn.socket.io/socket.io-2.3.1.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js" integrity="sha512-BR880yY3jIAdXrEpvj9PcknWXcLGCCG67Kh4BBuJ9PjGGKCyhaZ6gjv2M6qfI3FirhmyC8nfkGCPvhhbAdcXyw==" crossorigin="anonymous"></script>
+    <script src="chat.js" defer></script>
+  </body>
+</html>
