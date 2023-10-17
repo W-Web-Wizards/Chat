@@ -101,7 +101,7 @@ const sendmsg = () => {
       newmessage.scrollIntoView(true);
       socket.emit("message", {
         name: window.sessionStorage.getItem("livechat-name"),
-        text: msgtxt.innerHTML
+        text: msgtxt.innerHTML, 
       });
       eyebrow.style.display = 'none';
     } else {
